@@ -1,5 +1,4 @@
-import * as crypto from 'crypto';
-import type { BufferEncoding } from 'node:buffer';
+import crypto from 'node:crypto';
 
 export type PRNG = 'bytes' | 'int' | 'uuid';
 

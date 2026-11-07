@@ -1,6 +1,5 @@
 import yargs, { type Argv } from 'yargs';
 import { hideBin } from 'yargs/helpers';
-import type { BufferEncoding } from 'node:buffer';
 import process from 'node:process';
 import { prng, type PRNG } from './prng/index.js';
 
@@ -20,7 +19,7 @@ const argv = yargs(hideBin(process.argv))
         console.log(result);
       } catch (error) {
         if (error instanceof Error) {
-          console.error('Error al generar el valor aleatorio:', error);
+          console.error('Error al generar el valor aleatorio:', error.message);
         }
         process.exit(1);
       }
