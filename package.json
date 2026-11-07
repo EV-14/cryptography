@@ -1,6 +1,7 @@
 {
   "name": "cryptography",
   "version": "1.0.0",
+  "type": "module",
   "packageManager": "yarn@4.18.1",
   "scripts": {
     "cli": "tsx src/index.ts",
@@ -10,7 +11,11 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "@types/yargs": "^17.0.35",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "yargs": "^18.2.0"
   }
 }
